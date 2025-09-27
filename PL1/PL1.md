@@ -63,20 +63,18 @@
     
      - `.\john.exe --format=chap --wordlist=.\rockyou.txt .\chap.txt`
     
-     - However, it did not show the password
+     - Which showed valuable information, confirming that the passward was cracked, however it did not show the password
     
     ![Exercise2-Pergunta3.5.png](Images/Exercise2-Pergunta3.5.png)
     
-     - So I ran this command to see if it was working:
+     - So after a little research I ran this command to show the password:
     
        - `.\john.exe --show chap.txt`
        
     ![Exercise2-Pergunta3.6.png](Images/Exercise2-Pergunta3.6.png)
     
-       - And it showed the nickname alongside the password: "John.McGuirk:S0cc3r"
+       - And, as expected, it showed the nickname alongside the password unencrypted: "John.McGuirk:S0cc3r"
 
 ### 4 While it is cracking comment on the resilience of the cipher.
 - While cracking, it became clear that the security of the cipher relies on the password's complexity. The MD5-based challenge-response can be brute-forced easily if the password is weak. Modern hardware and tools make MD5 challenge-response resilient only for strong, unique passwords; otherwise, it is vulnerable to fast offline attacks.
 
-PL 1 EXERCICIO 2
-PL 2 EXERCICIO 3
